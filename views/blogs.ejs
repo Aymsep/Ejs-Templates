@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/menu.ejs') %>
+
+    <h1>all blogs</h1>
+    <% blogs.forEach(bl=> {  %>
+        <h2><%= bl.title %></h1>
+        <h2><%= bl.author %></h1>
+        <p><%= bl.snippet %></p>
+        <hr>
+    <% }) %>
+
+
+
+</body>
+</html>
